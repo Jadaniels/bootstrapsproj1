@@ -14,14 +14,21 @@
         <script src="/js/popper.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
 
+            <!-- The container class is the most basic layout and required when using default grid system in Bootstrap -->
             <div class = "container">
+
+                <!-- Navbar is the navigation class the brings in default attributes for moving through menus -->
+                <!-- The one listed below add additional attributes for size of screen and color scheme -->
                 <nav class = "navbar navbar-expand-lg navbar-dark bg-primary">
                     <a class = "navbar-brand" href = "#"> Company Name </a>
         
+                    <!-- This toggle feature creates a button for when the size of the screen is too small to contain the menu -->
+                    <!-- it is reference by the navbarsupportedcontent id -->
                     <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarSupportedContent">
                         <span class = "navbar-toggler-icon"></span>
                     </button>
 
+                    <!-- The below is the actual menu items for navigation -->
                     <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
                         <ul class = "navbar-nav ml-auto">
                             <li class = "nav-item">
@@ -30,8 +37,13 @@
                             <li class = "nav-item">
                                 <a class = "nav-link" href = "#"> About </a>
                             </li>
+
+                            <!-- This dropdown feature provides additional content as a sub group -->
                             <li class = "nav-item dropdown">
+
                                 <a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdown" data-toggle = "dropdown"> Products </a>
+                                
+                                <!-- This area is where the additional information is stored with the information above as main element -->
                                 <div class = "dropdown-menu">
                                     <a class = "dropdown-item" href = "#"> Product 1 </a>
                                     <a class = "dropdown-item" href = "#"> Product 2 </a>
@@ -47,6 +59,7 @@
                     </div>
                 </nav>
         
+                <!-- The jumbotron is a main element highlighting a topic-->
                 <div class = "jumbotron">
                     <h1 class = "display-4"> Simple. Elegant. Awesome. </h1>
                     <p class = "lead"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... </p>
@@ -55,9 +68,16 @@
                         <a class = "btn btn-primary btn-lg" href = "#" role = "button"> Learn More </a>
                     </p>
                 </div>
-                        
+                
+                <!-- Below is an example of the grid system using three elements -->
+                <!-- the first area row provides that all these are in the same row -->
                 <div class = "row">
+
+                    <!-- the col areas are based on a 12 point grid system.  Default is equal spaces based on number of columns added -->
+                    <!-- On the first card, it is listed as taking all 12 spaces on small screen and 4 spaces ( 4 spaces for each col equaling 12 ) on medium screens -->
                     <div class = "col-sm-12 col-md-4">
+
+                        <!-- The element that is being used is a card style.  Additionally, padding of 4 is added to assist with resizing when viewed on smaller screens -->
                         <div class = "card mb-4">
                             <div class = "card-body text-center">
                                 <h5 class = "card-title"> Card Title </h5>
@@ -86,7 +106,13 @@
                     </div>
                 </div>
         
+                <!-- Here there is another use of grid system -->
                 <div class = "row mt-sm-4 mt-md-0">
+
+                    <!-- Since there is only two columns listed, there are additional comments to class to determine sizes -->
+                    <!-- There is also additional instructions of text placement based on size of screen -->
+                    <!-- The first two comments indicate that on small screens that this column is to take all 12 spaces and the text is centered -->
+                    <!-- On medium screens it takes 8 annd the text is left justified-->
                     <div class = "col-sm-12 col-md-8 text-sm-center text-md-left">
                         <h3> An Important Heading </h3>
                         <p class = "lead"> A Sort of Important subheading can go here </p>
@@ -95,9 +121,13 @@
                         <p> Aenean eu quam libero. Maecenas fringilla, nisl fermentum ornare blandit, libero sapien tincidunt magna, ac dapibus quam augue vitae ex. </p>
                     </div>
                     
+                    <!-- On this column we have similiar to above with the 12 spaces on small screen, but now on medium screens it takes of 4 spaces -->
                     <div class = "col-sm-12 col-md-4">
+
+                        <!-- Inside this column we added a secondary menu -->
                         <h3 class = "mb-4"> Secondary Menu </h3>
         
+                        <!-- This is a use of flex box to control the size of the navigation menu and looks using flex-column and pills -->
                         <ul class = "nav flex-column nav-pills">
                             <li class = "nav-item">
                                 <a class = "nav-link active" href = "#"> Active </a>
