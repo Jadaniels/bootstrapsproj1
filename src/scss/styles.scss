@@ -1,1 +1,19 @@
+//  Variable Overrides
+
+// This overrides existing Bootstrap scss using the color theme changing all primary colors to reddish color 
+$theme-colors: (
+    "primary": #d95700
+);
+
+//  This overrides teh default background color
+$body-bg: #ededed;
+
+// This is more familiar and uses teh elements class to change default
+.jumbotron {
+    background-color: #ffffff !important;
+    border-top: 3px solid rgb(216, 219, 219);
+}
+
+//  Bootstrap SASS Imports
+@import "node_modules/bootstrap/scss/bootstrap";
 
