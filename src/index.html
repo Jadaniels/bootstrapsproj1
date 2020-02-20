@@ -15,7 +15,7 @@
         <script src="/js/bootstrap.min.js"></script>
 
             <!-- The container class is the most basic layout and required when using default grid system in Bootstrap -->
-            <div class = "container">
+            <main class = "container">
 
                 <!-- Navbar is the navigation class the brings in default attributes for moving through menus -->
                 <!-- The one listed below add additional attributes for size of screen and color scheme -->
@@ -29,7 +29,7 @@
                     </button>
 
                     <!-- The below is the actual menu items for navigation -->
-                    <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+                    <nav class = "collapse navbar-collapse" id = "navbarSupportedContent">
                         <ul class = "navbar-nav ml-auto">
                             <li class = "nav-item">
                                 <a class = "nav-link" href = "#"> Home </a>
@@ -44,23 +44,23 @@
                                 <a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdown" data-toggle = "dropdown"> Other Sites to See </a>
                                 
                                 <!-- This area is where the additional information is stored with the information above as main element -->
-                                <div class = "dropdown-menu">
+                                <nav class = "dropdown-menu">
                                     <a class = "dropdown-item" href = "#"> Mr Fluffypants Anime Emporium </a>
                                     <a class = "dropdown-item" href = "#"> Scotch and Gin Fanfare  </a>
                                     <div class = "dropdown-divider"> </div>
                                     <a class = "dropdown-item" href = "#"> Undergoing Maintenance </a>
                             
-                                </div>
+                                </nav>
                             </li>
                             <li class = "nav-item">
                                 <a class = "nav-link" href = "#"> Contact </a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </nav>
         
                 <!-- The jumbotron is a main element highlighting a topic-->
-                <div class = "jumbotron">
+                <header class = "jumbotron">
                     <h1 class = "display-4"> The Top Three Shows You Have To Watch This Season </h1>
                     <p class = "lead"> Disclaimer: Shows may not be appropriate for adults.  JK </p>
                 
@@ -70,62 +70,62 @@
                         <a href="#"><img src="assets/hqdefault.jpg" width="300">&#8678;	I'm a Link.</a>
                     </p>
 
-                </div>
+                </header>
                 
                 <!-- Below is an example of the grid system using three elements -->
                 <!-- the first area row provides that all these are in the same row -->
-                <div class = "row">
+                <section class = "row">
 
                     <!-- the col areas are based on a 12 point grid system.  Default is equal spaces based on number of columns added -->
                     <!-- On the first card, it is listed as taking all 12 spaces on small screen and 4 spaces ( 4 spaces for each col equaling 12 ) on medium screens -->
-                    <div class = "col-sm-12 col-md-4">
+                    <article class = "col-sm-12 col-md-4">
 
                         <!-- The element that is being used is a card style.  Additionally, padding of 4 is added to assist with resizing when viewed on smaller screens -->
-                        <div class = "card mb-4">
+                        <card class = "card mb-4">
                             <div class = "card-body text-center">
                                 <h5 class = "card-title"> Overload </h5>
                                 <p class = "card-text"> When a popular MMORPG is scheduled to be shut down permanently, veteran player Momonga refuses to log out. As NPCs begin to develop personalities and minds of their own he decides to put his skills to use as the game’s new overlord. </p>
                                 <a href = "#" class = "card-link"> Episodes </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class = "col">
-                        <div class = "card">
+                        </card>
+                    </article>
+                    <article class = "col">
+                        <card class = "card">
                             <div class = "card-body text-center">
                                 <h5 class = "card-title"> Welcome to Demon School! Iruma-kun </h5>
                                 <p class = "card-text"> Suzuki Iruma, human, 14, one day finds himself taken against his will into the world of demons. To add to his predicament, his doting owner and self-appointed "Grandpa" is the chair-demon at his new school. In order to survive, Iruma must deal with a haughty student who challenges him to a duel, a girl with adjustment issues, and so many more scary beings! Can this ultimate pacifist dodge the slings and arrows that are flung his way? As he struggles frantically, Iruma's innate kindness begins to win over enemies. </p>
                                 <a href = "#" class = "card-link"> Episodes </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class = "col">
-                        <div class = "card">
+                        </card>
+                    </article>
+                    <article class = "col">
+                        <card class = "card">
                             <div class = "card-body text-center">
                                 <h5 class = "card-title"> That Time I Got Reincarnated as a Slime </h5>
                                 <p class = "card-text"> Corporate worker Mikami Satoru is stabbed by a random killer, and is reborn to an alternate world. But he turns out to be reborn a slime! Thrown into this new world with the name Rimuru, he begins his quest to create a world that’s welcoming to all races. </p>
                                 <a href = "#" class = "card-link"> Episodes </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </card>
+                    </article>
+                </section>
         
                 <!-- Here there is another use of grid system -->
-                <div class = "row mt-sm-4 mt-md-0">
+                <section class = "row mt-sm-4 mt-md-0">
 
                     <!-- Since there is only two columns listed, there are additional comments to class to determine sizes -->
                     <!-- There is also additional instructions of text placement based on size of screen -->
                     <!-- The first two comments indicate that on small screens that this column is to take all 12 spaces and the text is centered -->
                     <!-- On medium screens it takes 8 annd the text is left justified-->
-                    <div class = "col-sm-12 col-md-8 text-sm-center text-md-left">
+                    <article class = "col-sm-12 col-md-8 text-sm-center text-md-left">
                         <h3> Funny Stories to Lighten Your Day </h3>
                         <p class = "lead"> We all need some fun in out life.  Take a look at some honorable mentions in comedy. </p>
                     
                         <p> <em>A Centaur's Life:</em>  Kimihara Himeno, also known as "Hime," goes about her life, love, and studies just like any ordinary high school girl. The only difference is that she's a centaur. She enjoys her school life along with classmates of many unique shapes, including Nozomi the draconid, Kyoko the goatfolk, an angelfolk class representative, and Sassas-chan the Antarctican. Hime's younger cousin Shino-chan, her friend Maki-chan, and the class representative's four younger sisters also join the cast in this very cute slice-of-life story about girls who are human, yet aren't! </p>
                         <p> <em>BLEND-S:</em>  Tsundere, Imouto (little sister type), etc. are only a few of the personas that the café waitresses play out here. And the new hire Maika, is asked by the store manager to play none other than the super sadist!? As she becomes devoted to her work, her super sadist persona blooms unexpectedly… Everything is a treat - even being stomped on - in this outrageous working comedy.</p>
-                    </div>
+                    </article>
                     
                     <!-- On this column we have similiar to above with the 12 spaces on small screen, but now on medium screens it takes of 4 spaces -->
-                    <div class = "col-sm-12 col-md-4">
+                    <aside class = "col-sm-12 col-md-4">
 
                         <!-- Inside this column we added a secondary menu -->
                         <h3 class = "mb-4"> Want to Read Manga Instead?  click Below! </h3>
@@ -146,8 +146,8 @@
                                 <a class = "nav-link disabled" href = "#"> MangaHub.io (18+ Only)</a>
                             </li>      
                         </ul>
-                    </div>		
-                </div>	     
-            </div> 
+                    </aside>		
+                </section>	     
+            </main> 
     </body>
 </html>
