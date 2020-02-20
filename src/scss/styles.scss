@@ -2,16 +2,26 @@
 
 // This overrides existing Bootstrap scss using the color theme changing all primary colors to reddish color 
 $theme-colors: (
-    "primary": #d95700
+    "primary": #ffA3BB
 );
 
 //  This overrides teh default background color
-$body-bg: #ededed;
+$body-bg: #F3FFBD;
 
-// This is more familiar and uses teh elements class to change default
+// This is more familiar and uses the elements class to change default
 .jumbotron {
-    background-color: #ffffff !important;
+    background-color: #F3FFBD !important;
     border-top: 3px solid rgb(216, 219, 219);
+}
+
+// changed color of card backgrounds
+.card-body {
+    background-color: #b2dbbf;
+}
+
+// changed color of text
+.navbar-brand .nav-link{
+    color: #9cada6;
 }
 
 //  Bootstrap SASS Imports
