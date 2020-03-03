@@ -5,24 +5,86 @@ $theme-colors: (
     "primary": #ffA3BB
 );
 
-//  This overrides teh default background color
-$body-bg: #F3FFBD;
+//  This overrides the default background color
+//  1. Use of two variable
+$variable1: #F3FFBD;
+$variable2: #b2dbbf;
 
-// This is more familiar and uses the elements class to change default
-.jumbotron {
-    background-color: #F3FFBD !important;
+
+//  6. Use of mixin  Pushed to Jumbotron
+@mixin example() {
+    padding: 2px;
+    background-color: $variable1 !important;
     border-top: 3px solid rgb(216, 219, 219);
 }
 
-// changed color of card backgrounds
-.card-body {
-    background-color: #b2dbbf;
+
+//  2. Nesting of three selectors
+main{
+    // This is more familiar and uses the elements class to change default
+    .jumbotron {
+        @include example();
+
+    }
+
+    // changed color of card backgrounds
+    .card-body {
+        background-color: $variable2;
+        border-radius: 4em;
+        border-style: dotted;
+
+// 4. Use of @media part 1
+        @media (min-width: 440px){
+            border-radius: 4px;
+            border-style: solid;
+            border-color: grey;
+            border-width: 4px;}
+    }
+
+    // changed color of text
+    .navbar-brand .nav-link{
+        color: #9cada6;
+    }
 }
 
-// changed color of text
-.navbar-brand .nav-link{
-    color: #9cada6;
+
+// 2. Nesting of three properties
+aside {
+    color: red;
 }
+
+ul{
+    li{
+        text-transform: uppercase;
+    }
+}
+
+section{
+    article{
+        text-align: center;
+    }
+}
+
+// 4. Use of @media part 2
+body{
+    @media (min-width: 440px){
+                border-radius: 4px;
+                border-style: solid;
+
+//  7. Use of SASS function lighten
+//  8. Use of SASS math
+                border-color: lighten(grey, 50%);
+                border-width: 10px;
+    }
+
+}
+
+//  5. Use of extend
+h5{
+    @extend .card-body;
+}
+
+
 
 //  Bootstrap SASS Imports
 @import "node_modules/bootstrap/scss/bootstrap";
