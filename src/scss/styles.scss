@@ -7,11 +7,13 @@ $theme-colors: (
 
 //  This overrides the default background color
 //  1. Use of two variable
+//  created two variable to change colors.
 $variable1: #F3FFBD;
 $variable2: #b2dbbf;
 
 
-//  6. Use of mixin  Pushed to Jumbotron
+//  6. Use of mixin  
+//  pushed to Jumbotron
 @mixin example() {
     padding: 2px;
     background-color: $variable1 !important;
